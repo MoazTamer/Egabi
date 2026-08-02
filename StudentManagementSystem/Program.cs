@@ -1,4 +1,5 @@
-﻿Console.Write("Enter student name: ");
+﻿#region Read Student Information
+Console.Write("Enter student name: ");
 string studentName = Console.ReadLine();
 
 Console.Write("Enter age: ");
@@ -11,6 +12,9 @@ Console.Write("Enter GPA: ");
 double studentGpa = double.Parse(Console.ReadLine());
 
 Console.WriteLine("-----------------------------------------------------");
+#endregion
+
+#region Display Student Information
 Console.WriteLine("Student All Information");
 Console.WriteLine("-----------------------------------------------------");
 
@@ -21,3 +25,4 @@ Console.WriteLine($"GPA     : {studentGpa}");
 
 if (studentGpa >= 3.0)
     Console.WriteLine("Excellent Student");
+#endregion
