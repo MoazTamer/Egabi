@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Deliberately NO PackageReferences here. Domain must not depend on
+         EF Core, ASP.NET Core, or SQL Server (Section 3). -->
+  </PropertyGroup>
+
+</Project>
